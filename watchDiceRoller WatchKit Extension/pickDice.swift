@@ -14,12 +14,13 @@ class pickDice: WKInterfaceController
 {
 
     @IBOutlet var theTable: WKInterfaceTable!
-    
+    let labelNames = ["d4","d6","d8","d10","d12","d20","d100"]
+    let sides = [4,6,8,10,12,20,100]
     override func awakeWithContext(context: AnyObject?)
     {
         super.awakeWithContext(context)
         
-        let labelNames = ["d4","d6","d8","d10","d12","d20","d100"]
+    
         self.theTable.setNumberOfRows(labelNames.count, withRowType: "cell")
         for(var i = 0; i < labelNames.count; i++)
         {
@@ -32,6 +33,8 @@ class pickDice: WKInterfaceController
 
     override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int)
     {
+        DiceRollerCore.numSides = sides[rowIndex]
+        print(DiceRollerCore.diceToBeRolled)
         self.pushControllerWithName("howMany", context: "whatever")
     }
 

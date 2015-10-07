@@ -17,7 +17,11 @@
                                         <action selector="addButtonClicked" destination="AgC-eL-Hgc" id="Uem-g3-zNN"/>
                                     </connections>
                                 </button>
-                                <button width="0.5" alignment="left" title="Roll" id="yga-o0-DTm"/>
+                                <button width="0.5" alignment="left" title="Roll" id="yga-o0-DTm">
+                                    <connections>
+                                        <action selector="rollButtonCLicked" destination="AgC-eL-Hgc" id="g1x-OF-EKS"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                         <table alignment="left" id="zq1-MJ-5uy">
@@ -36,7 +40,6 @@
                         </table>
                     </items>
                     <connections>
-                        <outlet property="diceString" destination="eOd-xW-8ie" id="32V-ku-aXd"/>
                         <outlet property="theTable" destination="zq1-MJ-5uy" id="nVz-Jw-N29"/>
                     </connections>
                 </controller>
@@ -55,7 +58,7 @@
                                         <tableRow identifier="cell" id="Xk1-M3-fYd" customClass="diceRow" customModule="watchDiceRoller_WatchKit_Extension">
                                             <group key="rootItem" width="1" alignment="left" id="fUq-Kc-ER3">
                                                 <items>
-                                                    <imageView width="0.33000000000000002" alignment="left" id="xvC-6z-67N"/>
+                                                    <imageView width="0.29999999999999999" height="1" alignment="left" image="d12.jpg" id="xvC-6z-67N"/>
                                                     <label width="0.67000000000000004" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="l8u-64-83C"/>
                                                 </items>
                                             </group>

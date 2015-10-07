@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		025365A71BC4E2C700C4C5E8 /* mainTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025365A61BC4E2C700C4C5E8 /* mainTable.swift */; settings = {ASSET_TAGS = (); }; };
+		025365A91BC564E100C4C5E8 /* DiceRollerCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025365A81BC564E100C4C5E8 /* DiceRollerCore.swift */; settings = {ASSET_TAGS = (); }; };
 		0260D9FE1BC4A076007A1E80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260D9FD1BC4A076007A1E80 /* AppDelegate.swift */; };
 		0260DA001BC4A076007A1E80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260D9FF1BC4A076007A1E80 /* ViewController.swift */; };
 		0260DA031BC4A076007A1E80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0260DA011BC4A076007A1E80 /* Main.storyboard */; };
@@ -78,6 +79,7 @@
 
 /* Begin PBXFileReference section */
 		025365A61BC4E2C700C4C5E8 /* mainTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainTable.swift; sourceTree = "<group>"; };
+		025365A81BC564E100C4C5E8 /* DiceRollerCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceRollerCore.swift; sourceTree = "<group>"; };
 		0260D9FA1BC4A076007A1E80 /* watchDiceRoller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchDiceRoller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0260D9FD1BC4A076007A1E80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0260D9FF1BC4A076007A1E80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				0260DA4F1BC4D7D2007A1E80 /* diceRow.swift */,
 				0260DA511BC4DC34007A1E80 /* cell2.swift */,
 				025365A61BC4E2C700C4C5E8 /* mainTable.swift */,
+				025365A81BC564E100C4C5E8 /* DiceRollerCore.swift */,
 			);
 			path = "watchDiceRoller WatchKit Extension";
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				0260DA3F1BC4D5EB007A1E80 /* HowMany.swift in Sources */,
 				0260DA271BC4A076007A1E80 /* NotificationController.swift in Sources */,
 				0260DA3D1BC4D5A7007A1E80 /* pickDice.swift in Sources */,
+				025365A91BC564E100C4C5E8 /* DiceRollerCore.swift in Sources */,
 				0260DA251BC4A076007A1E80 /* ExtensionDelegate.swift in Sources */,
 				0260DA231BC4A076007A1E80 /* FrontPage.swift in Sources */,
 				0260DA501BC4D7D2007A1E80 /* diceRow.swift in Sources */,

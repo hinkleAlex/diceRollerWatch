@@ -10,30 +10,40 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
+class InterfaceController: WKInterfaceController
+{
+    
+    let alert = WKAlertAction(title: "Ok", style: WKAlertActionStyle.Cancel, handler: { () -> Void in
+    })
+    
+    
     @IBOutlet var theTable: WKInterfaceTable!
     @IBAction func addButtonClicked()
     {
         self.pushControllerWithName("pickDice", context: "Here you go!")
     }
     
-    @IBOutlet var diceString: WKInterfaceLabel!
        override func awakeWithContext(context: AnyObject?)
     {
-        self.diceString.setText("2D6")
+        
         super.awakeWithContext(context)
         let labelNames = [""]
         self.theTable.setNumberOfRows(labelNames.count, withRowType: "cell")
         for(var i = 0; i < labelNames.count; i++)
         {
-            let currRow = self.theTable.rowControllerAtIndex(i) as! diceRow
-            currRow.theObject.setText(labelNames[i])
+            //let currRow = self.theTable.rowControllerAtIndex(i) as! mainTable
+            //currRow.diceTobeRolled.setText(DiceRollerCore.diceToBeRolled)
    
         }
 
     }
+    @IBAction func rollButtonCLicked()
+    {
+        self.presentAlertControllerWithTitle("The Roll", message: "\(rand()%Int32(DiceRollerCore.numSides))", preferredStyle: WKAlertControllerStyle.Alert, actions: [alert])
+    }
 
-    override func willActivate() {
+    override func willActivate()
+    {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
     }

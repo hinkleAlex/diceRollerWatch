@@ -13,16 +13,17 @@ import Foundation
 class HowMany: WKInterfaceController
 {
     var setNum = ""
-   
+     let labelNames = ["1","2","3","4","5","6","7","8","9","10"]
+    let rolls = [1,2,3,4,5,6,7,8,9,10]
     @IBOutlet var theTable: WKInterfaceTable!
     override func awakeWithContext(context: AnyObject?)
     {
-        let labelNames = ["1","2","3","4","5","6","7","8","9","10"]
+       
         self.theTable.setNumberOfRows(labelNames.count, withRowType: "cell2")
         for(var i = 1; i <= labelNames.count; i++)
         {
             let currRow = self.theTable.rowControllerAtIndex(i) as! cell2
-            currRow.theAmount.setText("\(i)"+"\(context)")
+            currRow.theAmount.setText("\(i)"+"\(DiceRollerCore.diceToBeRolled)")
             
         }
     }
@@ -30,7 +31,8 @@ class HowMany: WKInterfaceController
     
     override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int)
     {
-        
+        DiceRollerCore.numDice = rolls[rowIndex]
+        DiceRollerCore.diceToBeRolled = "\(labelNames[rowIndex])" + DiceRollerCore.diceToBeRolled
     }
 
     @IBAction func setNumberRoll()
