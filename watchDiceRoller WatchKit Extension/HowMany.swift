@@ -20,10 +20,10 @@ class HowMany: WKInterfaceController
     {
        
         self.theTable.setNumberOfRows(labelNames.count, withRowType: "cell2")
-        for(var i = 1; i <= labelNames.count; i++)
+        for(var i = 0; i <= labelNames.count; i++)
         {
-            //let currRow = self.theTable.rowControllerAtIndex(i) as! cell2
-            //currRow.theAmount.setText("\(i)"+"\(DiceRollerCore.diceToBeRolled)")
+            let currRow = self.theTable.rowControllerAtIndex(i) as! cell2
+            currRow.theAmount.setText(labelNames[i])
             
         }
     }
@@ -32,7 +32,7 @@ class HowMany: WKInterfaceController
     override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int)
     {
         DiceRollerCore.numDice = rolls[rowIndex]
-        DiceRollerCore.diceToBeRolled = "\(labelNames[rowIndex])" + DiceRollerCore.diceToBeRolled
+        DiceRollerCore.diceToBeRolled = "\(labelNames[rowIndex])"
     }
 
     @IBAction func setNumberRoll()
