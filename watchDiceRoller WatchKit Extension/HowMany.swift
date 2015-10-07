@@ -22,8 +22,8 @@ class HowMany: WKInterfaceController
         self.theTable.setNumberOfRows(labelNames.count, withRowType: "cell2")
         for(var i = 1; i <= labelNames.count; i++)
         {
-            let currRow = self.theTable.rowControllerAtIndex(i) as! cell2
-            currRow.theAmount.setText("\(i)"+"\(DiceRollerCore.diceToBeRolled)")
+            //let currRow = self.theTable.rowControllerAtIndex(i) as! cell2
+            //currRow.theAmount.setText("\(i)"+"\(DiceRollerCore.diceToBeRolled)")
             
         }
     }

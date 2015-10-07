@@ -28,18 +28,21 @@ class InterfaceController: WKInterfaceController
         
         super.awakeWithContext(context)
         let labelNames = [""]
-        self.theTable.setNumberOfRows(labelNames.count, withRowType: "cell")
+        self.theTable.setNumberOfRows(labelNames.count, withRowType: "cellMain")
         for(var i = 0; i < labelNames.count; i++)
         {
-            //let currRow = self.theTable.rowControllerAtIndex(i) as! mainTable
-            //currRow.diceTobeRolled.setText(DiceRollerCore.diceToBeRolled)
+            let currRow = self.theTable.rowControllerAtIndex(i) as! mainTable
+            currRow.diceTobeRolled.setText(DiceRollerCore.diceToBeRolled)
    
         }
 
     }
     @IBAction func rollButtonCLicked()
     {
+        for(var i = 0; i <= DiceRollerCore.numDice; i++)
+        {
         self.presentAlertControllerWithTitle("The Roll", message: "\(rand()%Int32(DiceRollerCore.numSides))", preferredStyle: WKAlertControllerStyle.Alert, actions: [alert])
+        }
     }
 
     override func willActivate()

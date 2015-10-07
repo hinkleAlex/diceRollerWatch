@@ -12,5 +12,5 @@ class DiceRollerCore: NSObject
 {
     static var numSides = -1
     static var numDice = -1
-    static var diceToBeRolled = ""
+    static var diceToBeRolled = "\(numDice)" + "D" + "\(numSides)"
 }
