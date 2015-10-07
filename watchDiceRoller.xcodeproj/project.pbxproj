@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		025365A71BC4E2C700C4C5E8 /* mainTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025365A61BC4E2C700C4C5E8 /* mainTable.swift */; settings = {ASSET_TAGS = (); }; };
 		0260D9FE1BC4A076007A1E80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260D9FD1BC4A076007A1E80 /* AppDelegate.swift */; };
 		0260DA001BC4A076007A1E80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260D9FF1BC4A076007A1E80 /* ViewController.swift */; };
 		0260DA031BC4A076007A1E80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0260DA011BC4A076007A1E80 /* Main.storyboard */; };
@@ -16,10 +17,21 @@
 		0260DA131BC4A076007A1E80 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0260DA111BC4A076007A1E80 /* Interface.storyboard */; };
 		0260DA151BC4A076007A1E80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0260DA141BC4A076007A1E80 /* Assets.xcassets */; };
 		0260DA1C1BC4A076007A1E80 /* watchDiceRoller WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0260DA1B1BC4A076007A1E80 /* watchDiceRoller WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		0260DA231BC4A076007A1E80 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260DA221BC4A076007A1E80 /* InterfaceController.swift */; };
+		0260DA231BC4A076007A1E80 /* FrontPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260DA221BC4A076007A1E80 /* FrontPage.swift */; };
 		0260DA251BC4A076007A1E80 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260DA241BC4A076007A1E80 /* ExtensionDelegate.swift */; };
 		0260DA271BC4A076007A1E80 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260DA261BC4A076007A1E80 /* NotificationController.swift */; };
 		0260DA291BC4A076007A1E80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0260DA281BC4A076007A1E80 /* Assets.xcassets */; };
+		0260DA3D1BC4D5A7007A1E80 /* pickDice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260DA3C1BC4D5A7007A1E80 /* pickDice.swift */; settings = {ASSET_TAGS = (); }; };
+		0260DA3F1BC4D5EB007A1E80 /* HowMany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260DA3E1BC4D5EB007A1E80 /* HowMany.swift */; settings = {ASSET_TAGS = (); }; };
+		0260DA481BC4D665007A1E80 /* d4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0260DA411BC4D665007A1E80 /* d4.jpg */; settings = {ASSET_TAGS = (); }; };
+		0260DA491BC4D665007A1E80 /* d6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0260DA421BC4D665007A1E80 /* d6.jpg */; settings = {ASSET_TAGS = (); }; };
+		0260DA4A1BC4D665007A1E80 /* d8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0260DA431BC4D665007A1E80 /* d8.jpg */; settings = {ASSET_TAGS = (); }; };
+		0260DA4B1BC4D665007A1E80 /* d10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0260DA441BC4D665007A1E80 /* d10.jpg */; settings = {ASSET_TAGS = (); }; };
+		0260DA4C1BC4D665007A1E80 /* d12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0260DA451BC4D665007A1E80 /* d12.jpg */; settings = {ASSET_TAGS = (); }; };
+		0260DA4D1BC4D665007A1E80 /* d20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0260DA461BC4D665007A1E80 /* d20.jpg */; settings = {ASSET_TAGS = (); }; };
+		0260DA4E1BC4D665007A1E80 /* d100.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0260DA471BC4D665007A1E80 /* d100.jpg */; settings = {ASSET_TAGS = (); }; };
+		0260DA501BC4D7D2007A1E80 /* diceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260DA4F1BC4D7D2007A1E80 /* diceRow.swift */; settings = {ASSET_TAGS = (); }; };
+		0260DA521BC4DC34007A1E80 /* cell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260DA511BC4DC34007A1E80 /* cell2.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +77,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		025365A61BC4E2C700C4C5E8 /* mainTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainTable.swift; sourceTree = "<group>"; };
 		0260D9FA1BC4A076007A1E80 /* watchDiceRoller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchDiceRoller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0260D9FD1BC4A076007A1E80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0260D9FF1BC4A076007A1E80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,11 +91,22 @@
 		0260DA161BC4A076007A1E80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0260DA1B1BC4A076007A1E80 /* watchDiceRoller WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watchDiceRoller WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0260DA211BC4A076007A1E80 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		0260DA221BC4A076007A1E80 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0260DA221BC4A076007A1E80 /* FrontPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontPage.swift; sourceTree = "<group>"; };
 		0260DA241BC4A076007A1E80 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		0260DA261BC4A076007A1E80 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		0260DA281BC4A076007A1E80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0260DA2A1BC4A076007A1E80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0260DA3C1BC4D5A7007A1E80 /* pickDice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pickDice.swift; sourceTree = "<group>"; };
+		0260DA3E1BC4D5EB007A1E80 /* HowMany.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowMany.swift; sourceTree = "<group>"; };
+		0260DA411BC4D665007A1E80 /* d4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = d4.jpg; path = ../../../Downloads/d4.jpg; sourceTree = "<group>"; };
+		0260DA421BC4D665007A1E80 /* d6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = d6.jpg; path = ../../../Downloads/d6.jpg; sourceTree = "<group>"; };
+		0260DA431BC4D665007A1E80 /* d8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = d8.jpg; path = ../../../Downloads/d8.jpg; sourceTree = "<group>"; };
+		0260DA441BC4D665007A1E80 /* d10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = d10.jpg; path = ../../../Downloads/d10.jpg; sourceTree = "<group>"; };
+		0260DA451BC4D665007A1E80 /* d12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = d12.jpg; path = ../../../Downloads/d12.jpg; sourceTree = "<group>"; };
+		0260DA461BC4D665007A1E80 /* d20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = d20.jpg; path = ../../../Downloads/d20.jpg; sourceTree = "<group>"; };
+		0260DA471BC4D665007A1E80 /* d100.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = d100.jpg; path = ../../../Downloads/d100.jpg; sourceTree = "<group>"; };
+		0260DA4F1BC4D7D2007A1E80 /* diceRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = diceRow.swift; sourceTree = "<group>"; };
+		0260DA511BC4DC34007A1E80 /* cell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cell2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +163,7 @@
 		0260DA101BC4A076007A1E80 /* watchDiceRoller WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				0260DA401BC4D636007A1E80 /* images */,
 				0260DA111BC4A076007A1E80 /* Interface.storyboard */,
 				0260DA141BC4A076007A1E80 /* Assets.xcassets */,
 				0260DA161BC4A076007A1E80 /* Info.plist */,
@@ -149,12 +174,17 @@
 		0260DA1F1BC4A076007A1E80 /* watchDiceRoller WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				0260DA221BC4A076007A1E80 /* InterfaceController.swift */,
+				0260DA221BC4A076007A1E80 /* FrontPage.swift */,
 				0260DA241BC4A076007A1E80 /* ExtensionDelegate.swift */,
 				0260DA261BC4A076007A1E80 /* NotificationController.swift */,
 				0260DA281BC4A076007A1E80 /* Assets.xcassets */,
 				0260DA2A1BC4A076007A1E80 /* Info.plist */,
 				0260DA201BC4A076007A1E80 /* Supporting Files */,
+				0260DA3C1BC4D5A7007A1E80 /* pickDice.swift */,
+				0260DA3E1BC4D5EB007A1E80 /* HowMany.swift */,
+				0260DA4F1BC4D7D2007A1E80 /* diceRow.swift */,
+				0260DA511BC4DC34007A1E80 /* cell2.swift */,
+				025365A61BC4E2C700C4C5E8 /* mainTable.swift */,
 			);
 			path = "watchDiceRoller WatchKit Extension";
 			sourceTree = "<group>";
@@ -165,6 +195,20 @@
 				0260DA211BC4A076007A1E80 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0260DA401BC4D636007A1E80 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				0260DA411BC4D665007A1E80 /* d4.jpg */,
+				0260DA421BC4D665007A1E80 /* d6.jpg */,
+				0260DA431BC4D665007A1E80 /* d8.jpg */,
+				0260DA441BC4D665007A1E80 /* d10.jpg */,
+				0260DA451BC4D665007A1E80 /* d12.jpg */,
+				0260DA461BC4D665007A1E80 /* d20.jpg */,
+				0260DA471BC4D665007A1E80 /* d100.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,8 +325,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0260DA4A1BC4D665007A1E80 /* d8.jpg in Resources */,
+				0260DA481BC4D665007A1E80 /* d4.jpg in Resources */,
 				0260DA151BC4A076007A1E80 /* Assets.xcassets in Resources */,
+				0260DA4B1BC4D665007A1E80 /* d10.jpg in Resources */,
+				0260DA4E1BC4D665007A1E80 /* d100.jpg in Resources */,
+				0260DA4D1BC4D665007A1E80 /* d20.jpg in Resources */,
 				0260DA131BC4A076007A1E80 /* Interface.storyboard in Resources */,
+				0260DA491BC4D665007A1E80 /* d6.jpg in Resources */,
+				0260DA4C1BC4D665007A1E80 /* d12.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,9 +361,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0260DA521BC4DC34007A1E80 /* cell2.swift in Sources */,
+				0260DA3F1BC4D5EB007A1E80 /* HowMany.swift in Sources */,
 				0260DA271BC4A076007A1E80 /* NotificationController.swift in Sources */,
+				0260DA3D1BC4D5A7007A1E80 /* pickDice.swift in Sources */,
 				0260DA251BC4A076007A1E80 /* ExtensionDelegate.swift in Sources */,
-				0260DA231BC4A076007A1E80 /* InterfaceController.swift in Sources */,
+				0260DA231BC4A076007A1E80 /* FrontPage.swift in Sources */,
+				0260DA501BC4D7D2007A1E80 /* diceRow.swift in Sources */,
+				025365A71BC4E2C700C4C5E8 /* mainTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,6 +597,7 @@
 				0260DA2F1BC4A076007A1E80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0260DA311BC4A076007A1E80 /* Build configuration list for PBXNativeTarget "watchDiceRoller WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +606,7 @@
 				0260DA331BC4A076007A1E80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0260DA351BC4A076007A1E80 /* Build configuration list for PBXNativeTarget "watchDiceRoller" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +615,7 @@
 				0260DA371BC4A076007A1E80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

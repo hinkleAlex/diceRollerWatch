@@ -1,16 +1,116 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watchDiceRoller_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="vxw-Pm-fIY">
+                            <items>
+                                <button width="0.5" alignment="left" title="Add" id="pJy-Ni-fuF">
+                                    <connections>
+                                        <action selector="addButtonClicked" destination="AgC-eL-Hgc" id="Uem-g3-zNN"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="Roll" id="yga-o0-DTm"/>
+                            </items>
+                        </group>
+                        <table alignment="left" id="zq1-MJ-5uy">
+                            <items>
+                                <tableRow identifier="cellMain" id="5KY-6M-lQu" customClass="mainTable" customModule="watchDiceRoller_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="G5w-bU-d6J">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="eOd-xW-8ie"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="diceTobeRolled" destination="eOd-xW-8ie" id="Eke-DY-FCu"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="diceString" destination="eOd-xW-8ie" id="32V-ku-aXd"/>
+                        <outlet property="theTable" destination="zq1-MJ-5uy" id="nVz-Jw-N29"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="84" y="442"/>
+        </scene>
+        <!--pickDice-->
+        <scene sceneID="Ke0-ut-OKB">
+            <objects>
+                <controller identifier="pickDice" hidesWhenLoading="NO" id="Lai-yh-9TP" customClass="pickDice" customModule="watchDiceRoller_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="JBG-UV-pWJ">
+                            <items>
+                                <table alignment="left" id="uN2-bX-GTR">
+                                    <items>
+                                        <tableRow identifier="cell" id="Xk1-M3-fYd" customClass="diceRow" customModule="watchDiceRoller_WatchKit_Extension">
+                                            <group key="rootItem" width="1" alignment="left" id="fUq-Kc-ER3">
+                                                <items>
+                                                    <imageView width="0.33000000000000002" alignment="left" id="xvC-6z-67N"/>
+                                                    <label width="0.67000000000000004" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="l8u-64-83C"/>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <outlet property="theImage" destination="xvC-6z-67N" id="2Vv-nS-JVw"/>
+                                                <outlet property="theObject" destination="l8u-64-83C" id="s8Q-Td-C4U"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="theTable" destination="uN2-bX-GTR" id="cHO-7e-hqu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="102" y="225"/>
+        </scene>
+        <!--howMany-->
+        <scene sceneID="u9t-8K-K2j">
+            <objects>
+                <controller identifier="howMany" hidesWhenLoading="NO" id="hqW-Hd-mIS" customClass="HowMany" customModule="watchDiceRoller_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="7Ca-6S-By4">
+                            <items>
+                                <table alignment="left" id="oEb-Oj-4Jv">
+                                    <items>
+                                        <tableRow identifier="cell2" id="FZk-W8-LY1" customClass="cell2" customModule="watchDiceRoller_WatchKit_Extension">
+                                            <group key="rootItem" width="1" alignment="left" id="cIr-rh-bgt">
+                                                <items>
+                                                    <label alignment="center" verticalAlignment="center" text="Label" id="6Py-9y-Mgm"/>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <outlet property="theAmount" destination="6Py-9y-Mgm" id="AJx-24-tMb"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="done" id="mdk-4j-9Iu">
+                            <connections>
+                                <action selector="setNumberRoll" destination="hqW-Hd-mIS" id="0KW-Su-fE3"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="theTable" destination="oEb-Oj-4Jv" id="TLp-P9-1IT"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="323" y="225"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -31,7 +131,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="watchDiceRoller_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
